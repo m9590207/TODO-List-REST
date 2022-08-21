@@ -1,0 +1,36 @@
+Server:
+  RunMode: debug
+  HttpPort: 8555
+  ReadTimeout: 60
+  WriteTimeout: 60
+App:
+  DefaultPageSize: 10
+  MaxPageSize: 100
+  DefaultContextTimeout: 60
+  LogSavePath: logs
+  LogFileName: app
+  LogFileExt: .log 
+JWT:
+  Secret: todoSecret
+  Issuer: todo-list-service
+  Expire: 600
+Database:
+  DBType: mysql
+  UserName: root
+  Password: PassWord123
+  Host: 127.0.0.1:3300
+  DBName: todo_list_service
+  TablePrefix: todo_
+  Charset: utf8
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+Email:
+  Host: smtp.mail.XXX.com
+  Port: 465
+  UserName: XXX@XXX.com
+  Password: XXX
+  IsSSL: true
+  From: XXX@XXX.com
+  To:
+    - m9590207@gmail.com
